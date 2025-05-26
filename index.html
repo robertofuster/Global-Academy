@@ -6,6 +6,7 @@
     <!--
     PRIMERA CLASE
 
+    Consigna:
     Seleccionar una temática a gusto personal.
     Repasar la estructura básica de etiquetas semánticas de que vimos en clase y aplicarla al body de nuestro documento para poder desarrollar en el.
         (section, article, nav, main, header, etc...)
@@ -21,6 +22,7 @@
 
     SEGUNDA CLASE
 
+    Consigna:
     Crear repositorio de Git y enviar todos los archivos
 
     git init
@@ -29,14 +31,41 @@
     git commit -m "Actualizo ... "
     git branch
     git push -u origin master
+
+    TERCERA CLASE
+
+    Primera tarea CSS - En esta tarea trabajaremos sobre el proyecto que veniamos haciendo previo al entregable.
+
+    Consigna:
+    Agregar las meta etiquetas vistas con contenido acorde a la tematica del sitio.
+    Crear una hoja global de CSS y enlazarla a todas las hojas de HTML.
+    Crear una hoja de CSS para privada para cada página de nuestro sitio y enlazarla con la hoja de HTML que le corresponda.
+    Colocar un fondo de color a todas las páginas que simule un modo oscuro y seleccionar un color de fuente que contraste con el fondo.
+    Utilizar comentarios separadores en la hoja de CSS para separar el código de una sección respecto del código de otra sección. Recomiendo usar la misma definición de
+     comentario que se usó en HTML para que sea más fácil relacionarlas visualmente.
+    Alinear titulos al centro de los contenedores que consideren necesarios.
+    Agregar una fuente de texto externa. Aquí pueden usar google fonts o investigar como aplicar una fuente descargable.
+    Intentar aplicar todos los selectores y combinaciones que vimos a modo de práctica aunque algunas de las combinaciones no las terminen usando a menudo en el futuro.
+     Es importante conocerlas y saber que disponemos de esas herramientas.
+    
+    Nota:
+    Para clonar el repo git clone "enlace al repo"
+    Para bajar descargar nuevos cambios una vez clonado git pull estando parado en la rama de la cual se quieren bajar cambios.
+    Para cambiarte de rama git checkout "nombre de rama"
     
     -->
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Roberto Alejandro Fuster">
-
+    <meta name="description" content="Sitio dedicado a mostrar recetas de cocina con pocos ingredientes y faciles de realizar.">
+    <meta name="keywords" content="cocina, ingredientes, faciles, rapidas, naturales">
+    
     <title>Clases Global-Academy</title>
+
+    <link rel="shortcut icon" href="assets/favicon.ico" title="Cocina Facil"/>
+    <link rel="stylesheet" href="global.css">
+
 </head>
 
 <body>
@@ -48,6 +77,7 @@
                 <li><a href="#primera">Recetas Dulces</a></li>
                 <li><a href="#segunda">Recetas Saladas</a></li>
                 <li><a href="#tercera">Recetas Imperdibles</a></li>
+                <li><a href="contacto.html">Contactenos</a></li>
             </ul>
         </nav>
 

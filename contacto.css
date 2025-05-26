@@ -1,0 +1,45 @@
+form {
+    max-width: 800px;                         /* Ancho máximo del formulario */
+    margin: 40px auto;                        /* espacio arriba/abajo y centra horizontalmente */
+    padding: 30px;                            /* Espacio interno en todo el formulario */
+    border: 1px solid #ccc;                   /* Borde gris claro alrededor */
+    border-radius: 12px;                      /* Bordes suavemente redondeados */
+    background: #f9f9f9;                      /* Fondo gris muy claro */
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);   /* Sombra sutil formulario */
+}
+
+label {
+    font-family: verdana;                     /* Fuente Verdana para los labels */
+    font-weight: bold;                        /* Texto en negrita para resaltar */
+    display: block;                           /* Cada label en su propia línea */
+    margin-bottom: 6px;                       /* Espacio debajo del label */
+    color: #333;                              /* Gris oscuro, fácil de leer */
+}
+
+input[type="text"],
+input[type="email"],
+
+textarea {
+    width: 100%;                              /* Ocupa todo el ancho del formulario */
+    padding: 8px;                             /* Espacio interno dentro de los campos */
+    border: 1px solid #bbb;                   /* Borde gris medio */
+    border-radius: 6px;                       /* Esquinas redondeadas en los campos */
+    margin-bottom: 16px;                      /* Espacio debajo de cada campo */
+    font-size: 1em;                           /* Tamaño de fuente estándar */
+    background: #fff;                         /* Fondo blanco para los campos */
+}
+
+input[type="submit"] {
+    background-color: #008cba;                /* Fondo celeste fuerte para el botón */
+    color: #fff;                              /* Texto blanco */
+    padding: 15px 22px;                       /* Espacio generoso dentro del botón */
+    border: none;                             /* Sin borde externo */
+    border-radius: 6px;                       /* Esquinas redondeadas en el botón */
+    font-size: 1em;                           /* Tamaño estándar del texto */
+    cursor: pointer;                          /* Cursor de mano al pasar sobre el botón */
+    transition: background 0.2s;              /* Efecto suave al cambiar el color de fondo */
+}
+
+input[type="submit"]:hover {
+    background-color: #005f73;                /* Celeste oscuro al pasar el mouse */
+}
