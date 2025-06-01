@@ -2,52 +2,161 @@ body {
   background-color: lightblue;        /* Fondo celeste claro para toda la página */
 }
 
+/* Título principal */
 h1 {
-  color: white;                       /* Texto blanco para los títulos principales */
-  text-align: center;                   /* Centra el texto horizontalmente */
-  font-size: 35px;                      /* Tamaño de fuente grande para resaltar */
-  font-family: verdana;                 /* Fuente Verdana */
+  color: white;                       /* Texto blanco */
+  text-align: center;                 /* Centra horizontalmente */
+  font-size: 35px;                    /* Letra grande y destacada */
+  font-family: Verdana, Arial, sans-serif; /* Fuente legible y moderna */
 }
 
+/* Subtítulos generales fuera de las secciones especiales */
 h2 {
-  color: rgb(63, 73, 209);            /* Color azul medio para subtítulos */
-  font-family: verdana;                 /* Fuente Verdana */
+  color: rgb(63, 73, 209);            /* Azul medio */
+  font-family: Verdana, Arial, sans-serif;
 }
-
 h3 {
-  color: rgb(236, 19, 218);           /* Color violeta fuerte para subtítulos */
-  font-family: verdana;                 /* Fuente Verdana */
+  color: rgb(236, 19, 218);           /* Violeta fuerte */
+  font-family: Verdana, Arial, sans-serif;
 }
 
-img {
-    border-radius: 18px;              /* Esquinas redondeadas en todas las imágenes */
-}
-
+/* Párrafos generales */
 p {
-  font-family: verdana;               /* Fuente Verdana en los párrafos */
-  font-size: 12px;                    /* Texto más pequeño para párrafos */
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;                    /* Letra un poco más chica para lectura cómoda */
 }
 
+/* Pie de página */
 footer {
     margin-top: 40px;                 /* Espacio arriba del footer */
-    padding: 16px 0;                  /* Padding vertical (arriba y abajo) */
-    background: #222;                 /* Fondo oscuro */
+    padding: 16px 0;                  /* Padding vertical */
+    background: #222;                 /* Fondo oscuro para contraste */
     color: #fff;                      /* Texto blanco */
-    text-align: center;               /* Centrado horizontalmente */
+    text-align: center;               /* Centra el texto */
     border-radius: 0 0 10px 10px;     /* Solo las esquinas de abajo redondeadas */
-    font-size: 1em;                   /* Tamaño de texto estándar */
+    font-size: 1em;                   /* Tamaño estándar de fuente */
     box-shadow: 0 -2px 10px rgba(0,0,0,0.07); /* Sombra suave arriba del footer */
 }
 
+/* Enlaces en el footer */
 footer a {
-    color: #62d4fd;                   /* Azul clarito para el enlace */
-    text-decoration: none;            /* Sin subrayado */
-    transition: color 0.2s;           /* Efecto suave al cambiar el color */
-    font-size: 15px;                  /* Tamaño del enlace */
-    font-family: verdana;             /* Fuente Verdana */
+    color: #62d4fd;                   /* Azul claro para los links */
+    text-decoration: none;            /* Sin subrayado por defecto */
+    transition: color 0.2s;           /* Efecto suave de color */
+    font-size: 15px;
+    font-family: Verdana, Arial, sans-serif;
 }
 
+/* Efecto hover para links del footer */
 footer a:hover {
     color: #fff200;                   /* Amarillo claro al pasar el mouse */
-    text-decoration: underline;       /* Subrayado al pasar el mouse */
+    text-decoration: underline;       /* Agrega subrayado en hover */
+}
+
+/* Estilos para las secciones de recetas #primera, #segunda, #tercera */
+#primera, #segunda, #tercera {
+    background: #fdf6e3;                  /* Fondo cálido, tipo recetario */
+    padding: 32px 0;                      /* Padding vertical amplio */
+    margin: 0 auto 40px auto;             /* Centrado horizontalmente y separación abajo */
+    border-radius: 18px;                  /* Esquinas suavemente redondeadas */
+    box-shadow: 0 6px 22px rgba(0,0,0,0.09); /* Sombra envolvente suave */
+    max-width: 1200px;                    /* Limita el ancho máximo, ideal para monitores grandes */
+}
+
+/* Espaciado interno para los artículos de cada sección */
+#primera article, #segunda article, #tercera article {
+    padding: 28px 32px;                   /* Padding interno */
+}
+
+/* Títulos de nivel 2 dentro de las secciones especiales */
+#primera h2, #segunda h2, #tercera h2 {
+    color: #d35400;                       /* Naranja suave, resalta en fondo claro */
+    font-size: 2.1em;                     /* Título más grande */
+    margin-bottom: 6px;                   /* Espacio debajo del título */
+    font-family: 'Trebuchet MS', Verdana, sans-serif; /* Fuente con más personalidad */
+    text-shadow: 0 1px 0 #fff2ce;         /* Sombra leve para dar relieve */
+}
+
+/* Títulos de nivel 3 dentro de las secciones especiales */
+#primera h3, #segunda h3, #tercera h3 {
+    color: #7f8c8d;                       /* Gris topo elegante */
+    font-size: 1.1em;
+    margin-bottom: 18px;
+    font-weight: normal;                  /* Menos pesado para diferenciar del h2 */
+}
+
+/* Imágenes dentro de las secciones especiales */
+#primera img, #segunda img, #tercera img {
+    display: block;                       /* Quita espacio abajo y permite centrar */
+    margin: 0 auto 20px auto;             /* Centra y agrega espacio debajo */
+    border-radius: 18px;                  /* Esquinas redondeadas para look suave */
+    box-shadow: 0 3px 18px rgba(0,0,0,0.10); /* Sombra suave */
+    width: 90%;                           /* Responsive: nunca desborda */
+    max-width: 340px;                     /* Máximo tamaño */
+}
+
+/* Títulos de nivel 4 dentro de las secciones especiales */
+#primera h4, #segunda h4, #tercera h4 {
+    color: #388e3c;                       /* Verde “chef” */
+    margin-top: 26px;
+    margin-bottom: 8px;
+    font-size: 1.18em;
+    letter-spacing: 1px;
+    border-bottom: 1.5px solid #a5d6a7;   /* Línea sutil debajo para destacar */
+    display: inline-block;                /* Línea solo hasta donde hay texto */
+    padding-bottom: 2px;
+}
+
+/* Párrafos dentro de las secciones especiales */
+#primera p, #segunda p, #tercera p {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1em;                       /* Un poco más grande que el general */
+    line-height: 1.7;                     /* Mayor interlineado, mejora lectura */
+    color: #2d3436;                       /* Gris oscuro para contraste suave */
+    background: #fffbe9;                  /* Fondo muy claro, tipo papel */
+    padding: 12px 18px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(213, 202, 146, 0.06); /* Sombra muy leve */
+    margin-bottom: 20px;
+}
+
+nav {
+    background: #fffbe9;                   /* Fondo claro y cálido */
+    margin: 30px auto 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.08); /* Sombra sutil */
+    max-width: 680px;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;                      /* Saca los puntitos */
+    margin: 0;
+    padding: 0;
+    display: flex;                         /* Menú horizontal */
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 18px;                        /* Separación entre botones */
+}
+
+nav a {
+    display: block;
+    padding: 14px 24px;
+    color: #d35400;                        /* Naranja fuerte, a tono con tus recetas */
+    font-family: 'Trebuchet MS', Verdana, sans-serif;
+    font-size: 1.07em;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: background 0.18s, color 0.18s;
+    font-weight: 500;
+}
+
+nav a:hover, nav a:focus {
+    background: #d35400;                   /* Fondo naranja al pasar el mouse */
+    color: #fffbe9;                        /* Letra clara al hover */
+    box-shadow: 0 2px 8px rgba(211, 84, 0, 0.10);
+    outline: none;
 }
